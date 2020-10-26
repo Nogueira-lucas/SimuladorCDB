@@ -1,4 +1,6 @@
-# DiCalculatorApp
+# Simulador de Investimentos - Renda Fixa
+
+  - Projeto: display simulador de aplicações em renda fixa
 
 Tecnologias utilizadas | Item/link
 ------------ | -------------
