@@ -71,7 +71,7 @@
               Saldo em {{ anoPrevisto.getFullYear() }}
             </h3>
             <span class="painel-column-display-container-timer-result-value">
-              R$ {{saldoPrevisto }}
+              {{saldoPrevisto | currency:'BRL':true }}
             </span>
             <span class="painel-column-display-container-timer-result-tax">
               Taxa de {{ taxaAnual | percent }} anual

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PainelComponent } from './painel.component';
 import { MaterialModule } from 'src/app/material.module';
@@ -13,6 +13,9 @@ import { MaterialModule } from 'src/app/material.module';
   ],
   exports: [
     PainelComponent
+  ],
+  providers: [
+
   ]
 })
 export class PainelModule { }
