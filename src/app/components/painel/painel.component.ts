@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, ViewChild, EventEmitter } from '@angu
 export class PainelComponent implements OnInit {
 
   aporteInicial : number = 100;
-  aporteMensal: number = 300;
+  aporteMensal: number = 100;
   duracaoEmAnos: number = 2;
 
   anoPrevisto: Date;
@@ -38,6 +38,10 @@ export class PainelComponent implements OnInit {
 
   get taxaAnual() {
     return this.taxaCDI * this.taxaCDB;
+  }
+
+  get totalInvestido() {
+    return this.aporteInicial + (this.aporteMensal * (this.duracaoEmAnos*12));
   }
 
   atualizarAporteInicial(valor: number) {

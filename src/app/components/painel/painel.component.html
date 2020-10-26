@@ -71,11 +71,12 @@
               Saldo em {{ anoPrevisto.getFullYear() }}
             </h3>
             <span class="painel-column-display-container-timer-result-value">
-              {{saldoPrevisto | currency:'BRL':true }}
+              {{(saldoPrevisto | currency:'BRL':true).replace('.', ',').replace(',', '.')}}
             </span>
             <span class="painel-column-display-container-timer-result-tax">
-              Taxa de {{ taxaAnual | percent }} anual
+              Taxa de {{ taxaAnual | percent }} anual.
             </span>
+            <span>Total investido: {{ (totalInvestido | currency:'BRL':true).replace('.', ',').replace(',', '.') }}</span>
           </div>
 
         </div>
