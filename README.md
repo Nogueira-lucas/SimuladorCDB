@@ -2,6 +2,6 @@
 
 Tecnologias utilizadas | Item/link
 ------------ | -------------
-SPA Framework | (Angular 10)[https://angular.io/docs]
+SPA Framework | [Angular 10](https://angular.io/docs)
 Pré-processador | Sass
-Material Lib | (Material)[https://material.angular.io/]
+Material Lib | [Material](https://material.angular.io/)
